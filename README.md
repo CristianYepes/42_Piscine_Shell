@@ -331,7 +331,20 @@ ps aux | grep proceso
 - [ShellCheck](https://www.shellcheck.net/) – Analizador estático para scripts de shell, ayuda a detectar errores y malas prácticas.
 - [Regex101](https://regex101.com/) – Plataforma interactiva para probar y depurar expresiones regulares.
 
-### Recursos Adicionales
+## Recursos Adicionales
 
-- [Bash Reference Manual (GNU)](https://www.gnu.org/software/bash/manual/bash.html) – Referencia oficial y detallada del Bash Shell.
-- [Explainshell](https://explainshell.com/) – Explicación detallada de comandos de shell línea por línea.
+Eliminar archivos .DS_Store existentes del repositorio:
+
+```
+find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+```
+
+Agregar .DS_Store al archivo .gitignore
+
+```
+echo .DS_Store >> .gitignore
+```
+
+
+
+
